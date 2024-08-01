@@ -1,10 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
+    <style>
+        #box{
+            height: 500px;
+            width: 500px;
+            border: 2px solid red;
+            background-color: green;
+            position: relative;
+        }
+    </style>
     <title>hello world</title>
 </head>
 <body>
-    
+   <div id="box" onmouseenter="change()" onmouseleave="now()" >
+</div>
 </body>
+<script> 
+let a=5;
+let box=document.getElementById("box");
+
+function change(){
+    box.style.background="red";
+box.style.left=$(a+=10)px;
+
+}
+function now(){
+    box.style.background="green";
+}
+
+    
+</script>
 </html>
